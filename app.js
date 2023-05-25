@@ -3,6 +3,10 @@ const db = require("./models");
 const { User, Blog } = db;
 const app = express();
 
+app.get("/", (req, res) => {
+  res.send("Express on Vercel");
+});
+
 app.get("/testcall", async (req, res) => {
   // console.log(db)
 
