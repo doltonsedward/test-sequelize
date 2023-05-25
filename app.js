@@ -3,6 +3,15 @@ const db = require("./models");
 const { User, Blog } = db;
 const app = express();
 
+app.get("/testcall", async (req, res) => {
+  // console.log(db)
+
+  res.json({
+    type: "success",
+    data: "halo dunia",
+  });
+});
+
 app.get("/user", async (req, res) => {
   // console.log(db)
 
